@@ -1,0 +1,83 @@
+.car_container {
+    padding: 20px;
+    background-color: #f6f6f6;
+    height: 95vh;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.temp {
+    &_container {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    &_text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+
+        color: #53565a;
+    }
+
+    &_num {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        margin-left: 15px;
+        color: #000000;
+    }
+}
+
+.gas {
+    &_container {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    &_icon {
+        margin-right: 6px;
+    }
+
+    &_text {
+        font-family: Volvo Novum;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        color: #000000;
+    }
+
+    &_num {
+        margin-left: 15px;
+    }
+}
+
+.car {
+    &_block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_control_panel {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+    }
+}
