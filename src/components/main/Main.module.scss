@@ -80,4 +80,31 @@
         flex-flow: column;
         justify-content: space-evenly;
     }
+
+    &_control_item {
+        display: flex;
+    }
+
+    &_control_text_block {
+        display: flex;
+        flex-flow: column;
+        margin-left: 30px;
+    }
+
+    &_title {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        color: #53565a;
+        white-space: nowrap;
+    }
+
+    &_subtitle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.06em;
+        color: #000000;
+        white-space: nowrap;
+    }
 }
