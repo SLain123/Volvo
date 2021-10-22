@@ -1,10 +1,9 @@
 .alarm {
-    padding: 0 34px;
-
     &_container {
         background: white;
         height: 100vh;
         position: relative;
+        padding: 0 34px;
     }
 
     &_close_btn {
@@ -32,4 +31,47 @@
     color: #888b8d;
     margin-top: 15px;
     font-size: 16px;
+}
+
+.data_container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #888b8d;
+}
+
+.mes_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.mes_subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.check_btn {
+    text-decoration: none;
+    color: white;
+    height: 35px;
+    background: #1b365d;
+    border-radius: 30px;
+    width: 132px;
+    padding: 10px 15px;
+    margin-left: 25px;
+    margin-top: 20px;
+    display: block;
+    white-space: nowrap;
+    width: 220px;
+    display: flex;
+    align-items: center;
 }

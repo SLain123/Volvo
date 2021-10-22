@@ -10,12 +10,15 @@ import progressIcon from '../../img/progress_bar.svg';
 import alert from '../../img/alert.svg';
 import car from '../../img/car.png';
 
-const Main = () => {
+const Main = ({ alarmList }) => {
     return (
         <div className={Styles.car_container}>
             <div className={Styles.head}>
                 <h1 className={Styles.title}>XC40</h1>
-                <Link to='/alarm' className={Styles.link}>
+                <Link to='/alarm' className={`${Styles.link} ${Styles.alarm_link}`}>
+                    {alarmList.length > 0 && (
+                        <span className={Styles.count}>{alarmList.length}</span>
+                    )}
                     <img src={alert} alt='alarm' />
                 </Link>
             </div>

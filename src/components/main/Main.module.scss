@@ -108,3 +108,20 @@
         white-space: nowrap;
     }
 }
+
+.count {
+    min-width: 14px;
+    min-height: 14px;
+    position: absolute;
+    font-size: 12px;
+    background: red;
+    color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alarm_link {
+    position: relative;
+}

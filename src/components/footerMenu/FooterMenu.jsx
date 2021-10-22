@@ -26,7 +26,7 @@ const FooterMenu = () => {
             status: currentURL === '/car',
             link: '/car',
         },
-        { icons: [messageIcon, messageIcon], status: true },
+        { icons: [messageIcon, messageIcon], status: true, link: '/support' },
         { icons: [userIcon, userIcon], status: true },
     ];
 

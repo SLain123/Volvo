@@ -1,0 +1,73 @@
+.support {
+    background: white;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.container {
+    background: url(../../img/sup_back.svg);
+    height: 170px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.06em;
+    color: #000000;
+    text-align: center;
+}
+
+.info {
+    background: white;
+    height: 95vh;
+
+    &_list {
+        display: flex;
+        flex-flow: column;
+        padding: 0 23px;
+    }
+
+    &_item {
+        display: flex;
+        padding: 18px 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 3px;
+            background: rgba(196, 196, 196, 0.3);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &_text_block {
+        display: flex;
+        flex-flow: column;
+    }
+
+    &_icon {
+        margin-right: 25px;
+    }
+
+    &_grey {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        color: #53565a;
+    }
+
+    &_blue {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.06em;
+        color: #206890;
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+}
