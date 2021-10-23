@@ -6,7 +6,7 @@ import backIcon from '../../img/back_arrow.svg';
 import leftIcon from '../../img/left_arrow.svg';
 import rightIcon from '../../img/right_arrow.svg';
 
-const Web = () => {
+const Web = ({ setModalMode, setShowModal }) => {
     const [slide, setSlide] = useState(0);
 
     const uncreaseSlide = () => {
@@ -81,6 +81,28 @@ const Web = () => {
                     type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
                 />
             </video>
+            <div className={Styles.sos_block}>
+                <button
+                    type='button'
+                    className={Styles.sos_btn}
+                    onClick={() => {
+                        setModalMode('volvo');
+                        setShowModal(true);
+                    }}
+                >
+                    ЦЕНТР VOLVO
+                </button>
+                <button
+                    type='button'
+                    className={Styles.sos_btn}
+                    onClick={() => {
+                        setModalMode('112');
+                        setShowModal(true);
+                    }}
+                >
+                    ВЫЗОВ 112
+                </button>
+            </div>
         </div>
     );
 };

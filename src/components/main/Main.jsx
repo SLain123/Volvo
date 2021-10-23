@@ -5,6 +5,7 @@ import Styles from './Main.module.scss';
 import lockIcon from '../../img/lock.svg';
 import cullerIcon from '../../img/culler.svg';
 import webIcon from '../../img/web.svg';
+import webActiveIcon from '../../img/web_active.svg';
 import gasIcon from '../../img/gas.svg';
 import progressIcon from '../../img/progress_bar.svg';
 import alert from '../../img/alert.svg';
@@ -15,7 +16,10 @@ const Main = ({ alarmList }) => {
         <div className={Styles.car_container}>
             <div className={Styles.head}>
                 <h1 className={Styles.title}>XC40</h1>
-                <Link to='/alarm' className={`${Styles.link} ${Styles.alarm_link}`}>
+                <Link
+                    to='/alarm'
+                    className={`${Styles.link} ${Styles.alarm_link}`}
+                >
                     {alarmList.length > 0 && (
                         <span className={Styles.count}>{alarmList.length}</span>
                     )}
@@ -63,12 +67,21 @@ const Main = ({ alarmList }) => {
                     </div>
                     <div className={Styles.car_control_item}>
                         <Link to='/web' className={Styles.link}>
-                            <img src={webIcon} alt='icon_btn' />
+                            <img
+                                src={
+                                    alarmList.length > 0
+                                        ? webActiveIcon
+                                        : webIcon
+                                }
+                                alt='icon_btn'
+                            />
                         </Link>
                         <div className={Styles.car_control_text_block}>
                             <span className={Styles.car_title}>Камера</span>
                             <span className={Styles.car_subtitle}>
-                                Работает
+                                {alarmList.length > 0
+                                    ? 'Работает'
+                                    : 'Отключена'}
                             </span>
                         </div>
                     </div>

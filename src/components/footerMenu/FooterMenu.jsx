@@ -8,6 +8,7 @@ import mapIcon from '../../img/map.svg';
 import carIcon from '../../img/car_menu.svg';
 import carActiveIcon from '../../img/car_menu_active.svg';
 import messageIcon from '../../img/message.svg';
+import messageActiveIcon from '../../img/message_active.svg';
 import userIcon from '../../img/user.svg';
 
 const FooterMenu = () => {
@@ -26,7 +27,11 @@ const FooterMenu = () => {
             status: currentURL === '/car',
             link: '/car',
         },
-        { icons: [messageIcon, messageIcon], status: true, link: '/support' },
+        {
+            icons: [messageIcon, messageActiveIcon],
+            status: currentURL === '/support',
+            link: '/support',
+        },
         { icons: [userIcon, userIcon], status: true },
     ];
 

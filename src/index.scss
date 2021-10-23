@@ -1,6 +1,14 @@
 body {
     margin: 0;
     overflow: hidden;
-    font-family: Volvo Novum, Arial;
+    font-family: 'Volvo', Arial, Helvetica, sans-serif;
     background-color: rgba(213, 212, 212, 0.5);
+}
+
+@font-face {
+    font-family: 'Volvo';
+    src: url('./fonts/Volvo.woff2');
+    src: url('./fonts/Volvo.woff');
+    font-style: normal;
+    font-weight: normal;
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Styles from './Modal.module.scss';
 import croseIcon from '../../img/crose.svg';
 
-const Modal = ({ showModal, setShowModal }) => {
+const Modal = ({ showModal, setShowModal, mode, setMode }) => {
     const [timer, setTimer] = useState(60);
 
     useEffect(() => {
@@ -13,8 +13,54 @@ const Modal = ({ showModal, setShowModal }) => {
                 setTimer(timer - 1);
             }, 1000);
         } else setShowModal(false);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [timer, showModal]);
+
+    if (mode === 'volvo') {
+        return (
+            <div className={Styles.container}>
+                <div className={Styles.modal_window}>
+                    <p className={Styles.modal_title}>Уведомление</p>
+                    <p className={Styles.modal_subtitle}>
+                        Ваше обращение отправлена в центр безопасности Вольво
+                    </p>
+                    <button
+                        type='button'
+                        className={Styles.close_btn}
+                        onClick={() => {
+                            setMode('');
+                            setShowModal(false);
+                        }}
+                    >
+                        <img src={croseIcon} alt='close' />
+                    </button>
+                </div>
+            </div>
+        );
+    }
+
+    if (mode === '112') {
+        return (
+            <div className={Styles.container}>
+                <div className={Styles.modal_window}>
+                    <p className={Styles.modal_title}>Вызов номера 112</p>
+                    <p className={Styles.modal_subtitle}>
+                        Ожидайте соединение со службой помощи 112...
+                    </p>
+                    <button
+                        type='button'
+                        className={Styles.close_btn}
+                        onClick={() => {
+                            setMode('');
+                            setShowModal(false);
+                        }}
+                    >
+                        <img src={croseIcon} alt='close' />
+                    </button>
+                </div>
+            </div>
+        );
+    }
 
     return (
         showModal && (

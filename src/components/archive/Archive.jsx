@@ -29,7 +29,7 @@ const Archive = () => {
                 </li>
                 <li className={Styles.item}>
                     <p className={Styles.item_title}>23.10.2021</p>
-                    <p className={Styles.item_subtitle}>Запись 10:31 - 10:02</p>
+                    <p className={Styles.item_subtitle}>Запись 10:31 - 10:42</p>
                     <Link to='/web' className={Styles.item_video}>
                         <img
                             src={videoPic}
@@ -44,8 +44,8 @@ const Archive = () => {
                     </Link>
                 </li>
                 <li className={Styles.item}>
-                    <p className={Styles.item_title}>24.10.2021</p>
-                    <p className={Styles.item_subtitle}>Запись 11:00 - 11:02</p>
+                    <p className={Styles.item_title}>22.10.2021</p>
+                    <p className={Styles.item_subtitle}>Запись 22:10 - 22:16</p>
                     <Link to='/web' className={Styles.item_video}>
                         <img
                             src={videoPic}
@@ -60,8 +60,8 @@ const Archive = () => {
                     </Link>
                 </li>
                 <li className={Styles.item}>
-                    <p className={Styles.item_title}>24.10.2021</p>
-                    <p className={Styles.item_subtitle}>Запись 11:00 - 11:02</p>
+                    <p className={Styles.item_title}>22.10.2021</p>
+                    <p className={Styles.item_subtitle}>Запись 21:00 - 21:12</p>
                     <Link to='/web' className={Styles.item_video}>
                         <img
                             src={videoPic}

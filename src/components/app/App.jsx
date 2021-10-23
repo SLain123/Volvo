@@ -15,6 +15,7 @@ import Styles from './App.module.scss';
 function App() {
     const [alarmList, setAlarmList] = useState([]);
     const [showModal, setShowModal] = useState(false);
+    const [modalMode, setModalMode] = useState('');
 
     useEffect(() => {
         setTimeout(() => setAlarmList([...alarmList, new Date()]), 30000);
@@ -24,7 +25,12 @@ function App() {
 
     return (
         <div className={Styles.container}>
-            <Modal showModal={showModal} setShowModal={setShowModal} />
+            <Modal
+                showModal={showModal}
+                setShowModal={setShowModal}
+                mode={modalMode}
+                setMode={setModalMode}
+            />
             <Switch>
                 <Route exact path='/'>
                     <>
@@ -48,7 +54,10 @@ function App() {
                     </>
                 </Route>
                 <Route path='/web'>
-                    <Web />
+                    <Web
+                        setModalMode={setModalMode}
+                        setShowModal={setShowModal}
+                    />
                 </Route>
                 <Route path='/archive'>
                     <Archive />
