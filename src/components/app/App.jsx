@@ -18,8 +18,8 @@ function App() {
     const [modalMode, setModalMode] = useState('');
 
     useEffect(() => {
-        setTimeout(() => setAlarmList([...alarmList, new Date()]), 30000);
-        setTimeout(() => setShowModal(true), 60000);
+        setTimeout(() => setAlarmList([...alarmList, new Date()]), 5000);
+        setTimeout(() => setShowModal(true), 15000);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
