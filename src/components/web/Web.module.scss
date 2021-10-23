@@ -4,3 +4,40 @@
     background: black;
     height: 100vh;
 }
+
+.back_link {
+    position: absolute;
+    top: 32px;
+    left: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.left_btn {
+    position: absolute;
+    top: 48%;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1;
+    background: transparent;
+    border: none;
+}
+
+.right_btn {
+    position: absolute;
+    top: 48%;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1;
+    background: transparent;
+    border: none;
+}
+
+.video {
+    opacity: 0;
+    position: absolute;
+}
+
+.visible {
+    opacity: 1;
+}

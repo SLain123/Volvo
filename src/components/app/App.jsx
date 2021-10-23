@@ -6,6 +6,7 @@ import Alarm from '../alarm';
 import Support from '../support';
 import Modal from '../modal';
 import Web from '../web';
+import Archive from '../archive';
 import { Switch, Route } from 'react-router-dom';
 import Main from '../main';
 
@@ -16,8 +17,8 @@ function App() {
     const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => setAlarmList([...alarmList, new Date()]), 10000);
-        setTimeout(() => setShowModal(true), 10000);
+        setTimeout(() => setAlarmList([...alarmList, new Date()]), 30000);
+        setTimeout(() => setShowModal(true), 60000);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -47,9 +48,10 @@ function App() {
                     </>
                 </Route>
                 <Route path='/web'>
-                    <>
-                        <Web />
-                    </>
+                    <Web />
+                </Route>
+                <Route path='/archive'>
+                    <Archive />
                 </Route>
                 <Route path='/alarm'>
                     <Alarm alarmList={alarmList} />

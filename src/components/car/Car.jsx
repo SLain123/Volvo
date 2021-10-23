@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Styles from './Car.module.scss';
 import headerPic from '../../img/car_head.png';
@@ -6,6 +7,7 @@ import toolsIcon from '../../img/tools.svg';
 import bookIcon from '../../img/book.svg';
 import speedIcon from '../../img/speed.svg';
 import carIcon from '../../img/car_menu.svg';
+import webIcon from '../../img/web.svg';
 
 const Car = () => {
     return (
@@ -47,13 +49,20 @@ const Car = () => {
                     <div className={Styles.info_text_block}>
                         <span className={Styles.info_grey}>Статистика</span>
                         <span className={Styles.info_blue}>9,9 л/100 км</span>
-                        <span className={Styles.info_grey}>
-                            Средний расход топлива
-                        </span>
-                        <span className={Styles.info_blue}>2650 км</span>
-                        <span className={Styles.info_grey}>Пробег</span>
                     </div>
                 </div>
+
+                <Link to='/archive' className={Styles.info_item}>
+                    <img
+                        className={Styles.info_icon}
+                        src={webIcon}
+                        alt='icon'
+                    />
+                    <div className={Styles.info_text_block}>
+                        <span className={Styles.info_grey}>Видеозаписи</span>
+                        <span className={Styles.info_blue}>1432 часа</span>
+                    </div>
+                </Link>
 
                 <div className={Styles.info_item}>
                     <img
