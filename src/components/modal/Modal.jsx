@@ -13,6 +13,7 @@ const Modal = ({ showModal, setShowModal }) => {
                 setTimer(timer - 1);
             }, 1000);
         } else setShowModal(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [timer, showModal]);
 
     return (

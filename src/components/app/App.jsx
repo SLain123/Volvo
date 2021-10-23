@@ -5,6 +5,7 @@ import FooterMenu from '../footerMenu';
 import Alarm from '../alarm';
 import Support from '../support';
 import Modal from '../modal';
+import Web from '../web';
 import { Switch, Route } from 'react-router-dom';
 import Main from '../main';
 
@@ -15,8 +16,9 @@ function App() {
     const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => setAlarmList([...alarmList, new Date()]), 1000);
+        setTimeout(() => setAlarmList([...alarmList, new Date()]), 10000);
         setTimeout(() => setShowModal(true), 10000);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
@@ -42,6 +44,11 @@ function App() {
                         <Header />
                         <Support />
                         <FooterMenu />
+                    </>
+                </Route>
+                <Route path='/web'>
+                    <>
+                        <Web />
                     </>
                 </Route>
                 <Route path='/alarm'>
