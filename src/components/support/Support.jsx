@@ -10,7 +10,7 @@ const Support = () => {
         <div className={Styles.support}>
             <div className={Styles.container}>
                 <span className={Styles.title}>
-                    Чем мы можем вам помочь, Антон?
+                    Чем мы можем Вам помочь, Артем?
                 </span>
             </div>
             <ul className={Styles.info_list}>
@@ -44,7 +44,7 @@ const Support = () => {
                     />
                     <div className={Styles.info_text_block}>
                         <span className={Styles.info_grey}>Premium Club</span>
-                        <span className={Styles.info_blue}>Какой-то текст </span>
+                        <span className={Styles.info_blue}>Избранные партнеры</span>
                     </div>
                 </li>
             </ul>

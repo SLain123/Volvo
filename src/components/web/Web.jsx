@@ -50,7 +50,7 @@ const Web = ({ setModalMode, setShowModal }) => {
             >
                 <source
                     src={
-                        'https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1EkniWNU3Jk6uBa6MMCToUZPyrGMmnOP8'
+                        'https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1KfNbix0F70VUy6zraWECqmzEv-zxVrDt'
                     }
                     type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
                 />
@@ -64,7 +64,7 @@ const Web = ({ setModalMode, setShowModal }) => {
                 loop
             >
                 <source
-                    src='https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1kP5-daTLf8OqCDZ0_Cn0HPdGdR-KQKSx'
+                    src='https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1LqcHsaYTMz2paGdRCDHUvTDMgCCdPS-W'
                     type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
                 />
             </video>
@@ -77,7 +77,7 @@ const Web = ({ setModalMode, setShowModal }) => {
                 loop
             >
                 <source
-                    src='https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1nosaHz20YhrRJ3bNRuBf47mjTFXAu9c7'
+                    src='https://drive.google.com/uc?export=download&confirm=no_antivirus&id=19C1hkSK1CLa2NRAY6YbUyo_x79CvgFMd'
                     type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
                 />
             </video>

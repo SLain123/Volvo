@@ -22,7 +22,7 @@ const Modal = ({ showModal, setShowModal, mode, setMode }) => {
                 <div className={Styles.modal_window}>
                     <p className={Styles.modal_title}>Уведомление</p>
                     <p className={Styles.modal_subtitle}>
-                        Ваше обращение отправлена в центр безопасности Вольво
+                        Ваше обращение отправлено в центр безопасности Вольво
                     </p>
                     <button
                         type='button'
@@ -76,11 +76,21 @@ const Modal = ({ showModal, setShowModal, mode, setMode }) => {
                         <button
                             type='button'
                             className={Styles.grey_btn}
-                            onClick={() => setShowModal(false)}
+                            onClick={() => {
+                                setMode('');
+                                setShowModal(false);
+                            }}
                         >
                             Закрыть ({timer})
                         </button>
-                        <Link to='/web' className={Styles.blue_btn}>
+                        <Link
+                            to='/web'
+                            className={Styles.blue_btn}
+                            onClick={() => {
+                                setMode('');
+                                setShowModal(false);
+                            }}
+                        >
                             Подробнее
                         </Link>
                     </div>
@@ -88,7 +98,10 @@ const Modal = ({ showModal, setShowModal, mode, setMode }) => {
                     <button
                         type='button'
                         className={Styles.close_btn}
-                        onClick={() => setShowModal(false)}
+                        onClick={() => {
+                            setMode('');
+                            setShowModal(false);
+                        }}
                     >
                         <img src={croseIcon} alt='close' />
                     </button>

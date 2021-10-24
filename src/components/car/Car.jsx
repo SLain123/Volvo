@@ -60,7 +60,7 @@ const Car = () => {
                     />
                     <div className={Styles.info_text_block}>
                         <span className={Styles.info_grey}>Видеозаписи</span>
-                        <span className={Styles.info_blue}>1432 часа</span>
+                        <span className={Styles.info_blue}>14 часов</span>
                     </div>
                 </Link>
 
